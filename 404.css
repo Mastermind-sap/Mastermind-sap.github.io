@@ -1,0 +1,28 @@
+body{
+background-color:purple;
+}
+div
+{
+height: 100%;
+width:100%;
+align:center;
+}
+p
+{
+text-align: right;
+font-family:algerian
+color:black;
+font-size: 80px;
+}
+canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
