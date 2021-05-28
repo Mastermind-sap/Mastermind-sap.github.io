@@ -7,12 +7,17 @@ height: 100%;
 width:100%;
 align:center;
 }
-p
+#score
 {
 text-align: right;
 font-family:algerian
 color:black;
 font-size: 80px;
+position: absolute;
+top: -90;
+bottom: 0;
+left: 0;
+right: 0;
 }
 canvas {
     padding: 0;
@@ -22,6 +27,31 @@ canvas {
     height: 500px;
     position: absolute;
     top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 3px solid white
+}
+#first
+{
+text-align: left;
+font-family:algerian
+color:black;
+font-size: 500px;
+position: absolute;
+    top: -500;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#last
+{
+text-align: right;
+font-family:algerian
+color:black;
+font-size: 500px;
+position: absolute;
+    top: -500;
     bottom: 0;
     left: 0;
     right: 0;
