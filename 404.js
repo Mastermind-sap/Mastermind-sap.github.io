@@ -67,3 +67,30 @@ function keyPush(evt) {
             break;
     }
 }
+function touchStarted() {
+  touchDist = createVector(mouseX, mouseY);
+}
+function touchEnded() {
+  touchDist.sub(createVector(mouseX, mouseY));
+  
+  let dir;
+  if (abs(touchDist.x) > abs(touchDist.y)) { // hor
+    dir = touchDist.x < 0 ? 'right' : 'left';
+  }
+  else { // vert
+    dir = touchDist.y < 0 ? 'down' : 'up';
+  }
+  switch (dir) {
+      case "left":
+         xv=-1;yv=0;
+        break;
+      case "right":
+        xv=1;yv=0;
+        break;
+      case "up":
+        xv=0;yv=1;
+        break;
+      case "down":
+       xv=0;yv=-1;
+        break;}
+}
